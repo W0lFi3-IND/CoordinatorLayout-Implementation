@@ -1,5 +1,6 @@
 package com.example.coordinatelayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -14,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.Layoutbasedbtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                startActivity(new Intent(MainActivity.this, LayoutBased.class));
             }
         });
         findViewById(R.id.Scrollbasedbtn).setOnClickListener(new View.OnClickListener() {
